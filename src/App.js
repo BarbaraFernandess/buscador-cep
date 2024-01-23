@@ -19,11 +19,11 @@ function App() {
     try{
       const response = await api.get(`${input}/json`);
       setCep(response.data);
-      setInput(" ");
+      setInput("");
 
     } catch{
        alert('OPS! Erro ao buscar');
-       setInput(" ");
+       setInput("");
     }
   }
 
